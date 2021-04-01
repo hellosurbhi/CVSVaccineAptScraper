@@ -7,9 +7,9 @@ const stateSelectors = require("./json/stateSelectors.json");
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 const sensitiveData = require("./env-data.js");
 
-const doc = new GoogleSpreadsheet();
+const doc = new GoogleSpreadsheet("10SnHpQwaspZ8XWpsq1cEThYvKfCQjoD1GV_AAiImOKM");
 
-const client = new Twitter(sensitiveData.spreadsheetKey);
+const client = new Twitter(config);
 
 // inputs
 const age = "18";
@@ -196,7 +196,7 @@ const scraperObject = {
       let consoleMessage = `at ${currentZipcode}`;
       await typeText("#address", currentZipcode, consoleMessage);
       await page.waitForTimeout(wait());
-      page.keyboard.press("Enter");
+      await page.keyboard.press("Enter");
       // await clickNextPage(
       //   "#generic > div > div > div.flex-container > button",
       //   "searching for appointments"
