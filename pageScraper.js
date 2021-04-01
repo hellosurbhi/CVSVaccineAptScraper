@@ -14,7 +14,7 @@ const client = new Twitter(config);
 
 // inputs
 const age = "35";
-const startingI = 0;
+const startingI = 10;
 const currentState = "Puerto Rico";
 const stateSelector = stateSelectors.find((x) => x.state === currentState)
   .selector;
@@ -40,7 +40,7 @@ const scraperObject = {
     }
 
     function wait() {
-      return getRandomInt(1000, 2500);
+      return getRandomInt(3500, 7000);
     }
 
     function newPageWait() {
@@ -52,7 +52,7 @@ const scraperObject = {
     }
 
     function typeDelay() {
-      return getRandomInt(150, 400);
+      return getRandomInt(250, 500);
     }
 
     let page = (await browser.pages())[0];
@@ -91,6 +91,7 @@ const scraperObject = {
       await page.evaluate((selector) => {
         document.querySelector(selector).value = "";
       }, selector);
+      await page.waitForTimeout(wait());
     }
 
     async function clickButton(selector, id) {
@@ -104,6 +105,7 @@ const scraperObject = {
           if (err) console.log(`Could not play sound: ${err}`);
         });
       }
+      await page.waitForTimeout(wait());
     }
 
     async function clickNextPage(selector, id) {
@@ -155,10 +157,12 @@ const scraperObject = {
       "#content > div.footer-content-wrapper > button",
       "continue scheduling button"
     );
+    await page.waitForTimeout(wait());
 
     await page.waitForTimeout(wait());
     await page.select("#jurisdiction", stateSelector);
 
+    await page.waitForTimeout(wait());
     await clickNextPage(
       "#content > div.footer-content-wrapper > button",
       "click next button"
@@ -191,7 +195,7 @@ const scraperObject = {
       let currentZipcode = zipcodes[i]["zip"];
       let consoleMessage = `at ${currentZipcode}`;
       await typeText("#address", currentZipcode, consoleMessage);
-      await page.waitForTimeout(wait());
+      await page.waitForTimeout(newPageWait());
       await clickNextPage(
         "#generic > div > div > div.flex-container > button",
         "searching for appointments"

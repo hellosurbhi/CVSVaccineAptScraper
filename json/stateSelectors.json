@@ -1,194 +1,194 @@
 [
   {
-      "state": "Alabama",
-      "selector": "1: EID_AL"
+    "state": "Alabama",
+    "selector": "1: EID_AL"
   },
   {
-      "state": "Arizona",
-      "selector": "2: EID_AZ"
+    "state": "Arizona",
+    "selector": "2: EID_AZ"
   },
   {
-      "state": "Arkansas",
-      "selector": "3: EID_AR"
+    "state": "Arkansas",
+    "selector": "3: EID_AR"
   },
   {
-      "state": "California",
-      "selector": "4: EID_CA"
+    "state": "California",
+    "selector": "4: EID_CA"
   },
   {
-      "state": "Colorado",
-      "selector": "5: EID_CO"
+    "state": "Colorado",
+    "selector": "5: EID_CO"
   },
   {
-      "state": "Connecticut",
-      "selector": "6: EID_CT"
+    "state": "Connecticut",
+    "selector": "6: EID_CT"
   },
   {
-      "state": "Delaware",
-      "selector": "7: EID_DE"
+    "state": "Delaware",
+    "selector": "7: EID_DE"
   },
   {
-      "state": "District of Columbia",
-      "selector": "8: EID_DC"
+    "state": "District of Columbia",
+    "selector": "8: EID_DC"
   },
   {
-      "state": "Florida",
-      "selector": "9: EID_FL"
+    "state": "Florida",
+    "selector": "9: EID_FL"
   },
   {
-      "state": "Georgia",
-      "selector": "10: EID_GA"
+    "state": "Georgia",
+    "selector": "10: EID_GA"
   },
   {
-      "state": "Hawaii",
-      "selector": "11: EID_HI"
+    "state": "Hawaii",
+    "selector": "11: EID_HI"
   },
   {
-      "state": "Illinois - Chicago",
-      "selector": "12: EID_IL_CHI"
+    "state": "Illinois - Chicago",
+    "selector": "12: EID_IL_CHI"
   },
   {
-      "state": "Illinois - Other",
-      "selector": "13: EID_IL"
+    "state": "Illinois - Other",
+    "selector": "13: EID_IL"
   },
   {
-      "state": "Indiana",
-      "selector": "14: EID_IN"
+    "state": "Indiana",
+    "selector": "14: EID_IN"
   },
   {
-      "state": "Iowa",
-      "selector": "15: EID_IA"
+    "state": "Iowa",
+    "selector": "15: EID_IA"
   },
   {
-      "state": "Kansas",
-      "selector": "16: EID_KS"
+    "state": "Kansas",
+    "selector": "16: EID_KS"
   },
   {
-      "state": "Kentucky",
-      "selector": "17: EID_KY"
+    "state": "Kentucky",
+    "selector": "17: EID_KY"
   },
   {
-      "state": "Louisiana",
-      "selector": "18: EID_LA"
+    "state": "Louisiana",
+    "selector": "18: EID_LA"
   },
   {
-      "state": "Maryland",
-      "selector": "19: EID_MD"
+    "state": "Maryland",
+    "selector": "19: EID_MD"
   },
   {
-      "state": "Massachusetts",
-      "selector": "20: EID_MA"
+    "state": "Massachusetts",
+    "selector": "20: EID_MA"
   },
   {
-      "state": "Michigan",
-      "selector": "21: EID_MI"
+    "state": "Michigan",
+    "selector": "21: EID_MI"
   },
   {
-      "state": "Minnesota",
-      "selector": "22: EID_MN"
+    "state": "Minnesota",
+    "selector": "22: EID_MN"
   },
   {
-      "state": "Mississippi",
-      "selector": "23: EID_MS"
+    "state": "Mississippi",
+    "selector": "23: EID_MS"
   },
   {
-      "state": "Missouri",
-      "selector": "24: EID_MO"
+    "state": "Missouri",
+    "selector": "24: EID_MO"
   },
   {
-      "state": "Montana",
-      "selector": "25: EID_MT"
+    "state": "Montana",
+    "selector": "25: EID_MT"
   },
   {
-      "state": "Nevada",
-      "selector": "26: EID_NV"
+    "state": "Nevada",
+    "selector": "26: EID_NV"
   },
   {
-      "state": "New Jersey",
-      "selector": "27: EID_NJ"
+    "state": "New Jersey",
+    "selector": "27: EID_NJ"
   },
   {
-      "state": "New Mexico",
-      "selector": "28: EID_NM"
+    "state": "New Mexico",
+    "selector": "28: EID_NM"
   },
   {
-      "state": "New York- New York City",
-      "selector": "29: EID_NY_NYC"
+    "state": "New York- New York City",
+    "selector": "29: EID_NY_NYC"
   },
   {
-      "state": "New York- Other",
-      "selector": "30: EID_NY"
+    "state": "New York- Other",
+    "selector": "30: EID_NY"
   },
   {
-      "state": "North Carolina",
-      "selector": "31: EID_NC"
+    "state": "North Carolina",
+    "selector": "31: EID_NC"
   },
   {
-      "state": "North Dakota",
-      "selector": "32: EID_ND"
+    "state": "North Dakota",
+    "selector": "32: EID_ND"
   },
   {
-      "state": "Ohio",
-      "selector": "33: EID_OH"
+    "state": "Ohio",
+    "selector": "33: EID_OH"
   },
   {
-      "state": "Oklahoma",
-      "selector": "34: EID_OK"
+    "state": "Oklahoma",
+    "selector": "34: EID_OK"
   },
   {
-      "state": "Oregon",
-      "selector": "35: EID_OR"
+    "state": "Oregon",
+    "selector": "35: EID_OR"
   },
   {
-      "state": "Pennsylvania-Other",
-      "selector": "36: EID_PA"
+    "state": "Pennsylvania-Other",
+    "selector": "36: EID_PA"
   },
   {
-      "state": "Pennsylvania-Philadelphia",
-      "selector": "37: EID_PA_PHI"
+    "state": "Pennsylvania-Philadelphia",
+    "selector": "37: EID_PA_PHI"
   },
   {
-      "state": "Puerto Rico",
-      "selector": "38: EID_PR"
+    "state": "Puerto Rico",
+    "selector": "38: EID_PR"
   },
   {
-      "state": "Rhode Island",
-      "selector": "39: EID_RI"
+    "state": "Rhode Island",
+    "selector": "39: EID_RI"
   },
   {
-      "state": "South Carolina",
-      "selector": "40: EID_SC"
+    "state": "South Carolina",
+    "selector": "40: EID_SC"
   },
   {
-      "state": "Tennessee",
-      "selector": "41: EID_TN"
+    "state": "Tennessee",
+    "selector": "41: EID_TN"
   },
   {
-      "state": "Texas",
-      "selector": "42: EID_TX"
+    "state": "Texas",
+    "selector": "42: EID_TX"
   },
   {
-      "state": "Utah",
-      "selector": "43: EID_UT"
+    "state": "Utah",
+    "selector": "43: EID_UT"
   },
   {
-      "state": "Vermont",
-      "selector": "44: EID_VT"
+    "state": "Vermont",
+    "selector": "44: EID_VT"
   },
   {
-      "state": "Virginia",
-      "selector": "45: EID_VA"
+    "state": "Virginia",
+    "selector": "45: EID_VA"
   },
   {
-      "state": "Washington",
-      "selector": "46: EID_WA"
+    "state": "Washington",
+    "selector": "46: EID_WA"
   },
   {
-      "state": "West Virginia",
-      "selector": "47: EID_WV"
+    "state": "West Virginia",
+    "selector": "47: EID_WV"
   },
   {
-      "state": "Wisconsin",
-      "selector": "48: EID_WI"
+    "state": "Wisconsin",
+    "selector": "48: EID_WI"
   }
 ]
