@@ -5,12 +5,11 @@ const config = require("./config");
 const zips = require("./json/zips.json");
 const stateSelectors = require("./json/stateSelectors.json");
 const { GoogleSpreadsheet } = require("google-spreadsheet");
+const sensitiveData = require("./env-data.js");
 
-const doc = new GoogleSpreadsheet(
-  "10SnHpQwaspZ8XWpsq1cEThYvKfCQjoD1GV_AAiImOKM"
-);
+const doc = new GoogleSpreadsheet();
 
-const client = new Twitter(config);
+const client = new Twitter(sensitiveData.spreadsheetKey);
 
 // inputs
 const age = "18";
@@ -197,7 +196,7 @@ const scraperObject = {
       let consoleMessage = `at ${currentZipcode}`;
       await typeText("#address", currentZipcode, consoleMessage);
       await page.waitForTimeout(wait());
-      page.keyboard.press('Enter');
+      page.keyboard.press("Enter");
       // await clickNextPage(
       //   "#generic > div > div > div.flex-container > button",
       //   "searching for appointments"
