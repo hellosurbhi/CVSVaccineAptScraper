@@ -13,9 +13,9 @@ const doc = new GoogleSpreadsheet(
 const client = new Twitter(config);
 
 // inputs
-const age = "35";
-const startingI = 10;
-const currentState = "Puerto Rico";
+const age = "18";
+const startingI = 20;
+const currentState = "Alabama";
 const stateSelector = stateSelectors.find((x) => x.state === currentState)
   .selector;
 
@@ -40,19 +40,19 @@ const scraperObject = {
     }
 
     function wait() {
-      return getRandomInt(3500, 7000);
+      return getRandomInt(1000, 2500);
     }
 
     function newPageWait() {
-      return getRandomInt(4000, 8000);
+      return getRandomInt(4000, 6000);
     }
 
     function timeoutWait() {
-      return getRandomInt(8000, 10000);
+      return getRandomInt(3000, 5000);
     }
 
     function typeDelay() {
-      return getRandomInt(250, 500);
+      return getRandomInt(175, 400);
     }
 
     let page = (await browser.pages())[0];
@@ -75,7 +75,7 @@ const scraperObject = {
       try {
         await page.waitForTimeout(wait());
         await page.focus(selector);
-        await page.type(selector, input, { delay: typeDelay() });
+        await page.keyboard.type(input, { delay: typeDelay() });
         await page.waitForTimeout(wait());
         console.log(`${id} input typed in`);
       } catch (err) {
@@ -114,7 +114,7 @@ const scraperObject = {
         console.log(`${id} clicked, moved to next page`);
         await page.click(selector);
       } catch (err) {
-        console.error(`${id} not found`, err);
+        console.error(`${id} button for new page not found`, err);
         player.play("./media/roadrunner.mp3", (err) => {
           if (err) console.log(`Could not play sound: ${err}`);
         });
@@ -192,14 +192,16 @@ const scraperObject = {
     let tweetedAddressObject = {};
 
     for (let i = startingI; i < zipcodes.length; i++) {
-      let currentZipcode = zipcodes[i]["zip"];
+      console.log(`iteration number ${i}`);
+      let currentZipcode = zipcodes[i]["zip"].toString();
       let consoleMessage = `at ${currentZipcode}`;
       await typeText("#address", currentZipcode, consoleMessage);
-      await page.waitForTimeout(newPageWait());
-      await clickNextPage(
-        "#generic > div > div > div.flex-container > button",
-        "searching for appointments"
-      );
+      await page.waitForTimeout(wait());
+      page.keyboard.press('Enter');
+      // await clickNextPage(
+      //   "#generic > div > div > div.flex-container > button",
+      //   "searching for appointments"
+      // );
       await page.waitForTimeout(wait());
       let availableAppoinments = await page.evaluate(() => {
         let el = document.querySelector("#availableDate");

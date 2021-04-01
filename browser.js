@@ -16,7 +16,8 @@ async function startBrowser() {
     //Return an instance of the browser
     browser = await puppeteer.launch({
       executablePath:
-        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        // "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
       headless: false,
       devtools: true,
       defaultViewport: { width: 1366, height: 768 },
