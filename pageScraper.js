@@ -13,7 +13,7 @@ const doc = new GoogleSpreadsheet(
 const client = new Twitter(config);
 
 // inputs
-const age = "18";
+const age = "35";
 const startingI = 0;
 const currentState = "Puerto Rico";
 const stateSelector = stateSelectors.find((x) => x.state === currentState)
@@ -188,7 +188,7 @@ const scraperObject = {
     let tweetedAddressObject = {};
 
     for (let i = startingI; i < zipcodes.length; i++) {
-      let currentZipcode = zipcodes[i]["zipcode"];
+      let currentZipcode = zipcodes[i]["zip"];
       let consoleMessage = `at ${currentZipcode}`;
       await typeText("#address", currentZipcode, consoleMessage);
       await page.waitForTimeout(wait());
