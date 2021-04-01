@@ -6,7 +6,7 @@
 Wrote a simple script to look up covid vaccine appointments at CVS pharmacies across the country.
 If found, details about the vaccines are tweeted out and stored in a google spreadsheet and the logs are also stored in a local text file. 
 
-I used my ![Puppeteer Boilerpalate repo](hellosurbhi/puppeteer-boilerplate) to set up the project - 
+I used my [Puppeteer Boilerpalate repo](hellosurbhi/puppeteer-boilerplate) to set up the project.
 
 **npm module coming soon!**
 
