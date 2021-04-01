@@ -18,6 +18,20 @@
   },
   "homepage": "https://github.com/hellosurbhi/puppeteer-starter-code#readme",
   "dependencies": {
-    "puppeteer": "^5.5.0"
+    "capital-case": "^1.0.4",
+    "change-case": "^4.1.2",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "google-spreadsheet": "^3.1.15",
+    "luxon": "^1.26.0",
+    "mongoose": "^5.12.3",
+    "play-sound": "^1.1.3",
+    "puppeteer": "^5.5.0",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-adblocker": "^2.11.11",
+    "puppeteer-extra-plugin-anonymize-ua": "^2.2.17",
+    "puppeteer-extra-plugin-stealth": "^2.7.6",
+    "random-useragent": "^0.5.0",
+    "twitter-lite": "^1.1.0"
   }
 }

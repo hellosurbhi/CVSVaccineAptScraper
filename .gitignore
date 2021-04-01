@@ -1,1 +1,6 @@
 node_modules
+.env
+creds-from-google.json
+logs.txt
+config.js
+
