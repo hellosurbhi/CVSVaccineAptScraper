@@ -1,8 +1,12 @@
-# Puppeteer Boilerplate 
+# Covid Vaccine Appointment Scraper
 ![](https://img.shields.io/github/license/hellosurbhi/puppeteer-boilerplate) 
 ![](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhellosurbhi%2Fpuppeteer-boilerplate)
 <hr />
-Starter code for puppeteer projects of any complexity. 
+
+Wrote a simple script to look up covid vaccine appointments at CVS pharmacies across the country.
+If found, details about the vaccines are tweeted out and stored in a google spreadsheet and the logs are also stored in a local text file. 
+
+I used my ![Puppeteer Boilerpalate repo](hellosurbhi/puppeteer-boilerplate) to set up the project - 
 
 **npm module coming soon!**
 
